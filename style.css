@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+:root {
+    --cor-fundo: #0f0e1a;
+    --cor-principal: #1e1d2f;
+    --cor-secundaria: #2a2845;
+    --cor-destaque: #7b6ef6;
+    --cor-texto: #eae8f5;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 20px;
+}
+
+.caixa-principal {
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    padding: 30px 25px;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 6px solid var(--cor-destaque);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(123, 110, 246, 0.15);
+}
+
+h1 {
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    letter-spacing: -0.5px;
+    text-shadow: 0 2px 12px rgba(123, 110, 246, 0.2);
+    margin-bottom: 20px;
+    border-bottom: 4px solid var(--cor-destaque);
+    border-radius: 8px;
+    padding-bottom: 14px;
+}
+
+.caixa-perguntas {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #d5d0f0;
+    margin-bottom: 24px;
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: #f0edff;
+    border: 1px solid rgba(123, 110, 246, 0.2);
+    border-radius: 12px;
+    padding: 14px 22px;
+    margin: 6px 4px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: calc(100% - 16px);
+    max-width: 280px;
+}
+
+button:hover {
+    background-color: var(--cor-destaque);
+    color: #ffffff;
+    border-color: var(--cor-destaque);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(123, 110, 246, 0.25);
+}
+
+.caixa-alternativas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin: 16px 0;
+}
+
+.caixa-resultado {
+    margin-top: 20px;
+    padding: 16px;
+    background-color: var(--cor-secundaria);
+    border-radius: 12px;
+    border-left: 4px solid var(--cor-destaque);
+}
+
+.texto-resultado {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #d5d0f0;
+    margin: 0;
+}
